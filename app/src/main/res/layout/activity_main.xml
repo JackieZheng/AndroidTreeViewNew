@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_switch_btn"
+        android:text="CheckBox切换"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/trBox"
+        android:layout_below="@id/check_switch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tree_lv" />
+        <!--listView  只能用 android:layout_height="match_parent" -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sltResult"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:text="选择结果"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout >
